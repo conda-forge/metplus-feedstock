@@ -1,4 +1,6 @@
 #!/bin/bash
+# Get an updated config.sub and config.guess
+cp $BUILD_PREFIX/share/gnuconfig/config.* ./MET
 set -ex
 
 export CFLAGS="-I${PREFIX}/include $CFLAGS"
@@ -33,7 +35,9 @@ cp ${BUILD_PREFIX}/share/gnuconfig/config.guess ./MET/
 (cd MET &&
      ./configure --prefix="${PREFIX}" --enable-all BUFRLIB_NAME=-lbufr_4 GRIB2CLIB_NAME=-lg2c &&
      make install -j${CPU_COUNT} &&
+if [[ "${CONDA_BUILD_CROSS_COMPILATION:-}" != "1" || "${CROSSCOMPILING_EMULATOR}" != "" ]]; then
      make test)
+fi
 
 
 sed -i.bak "s|MET_INSTALL_DIR = /path/to|MET_INSTALL_DIR = ${PREFIX}|g" parm/metplus_config/defaults.conf
