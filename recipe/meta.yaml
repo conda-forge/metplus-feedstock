@@ -1,5 +1,5 @@
 {% set version = "6.1.0" %}
-{% set met_version = "12.0.2" %}
+{% set met_version = "12.1.0" %}
 
 package:
   name: metplus
@@ -7,12 +7,12 @@ package:
 
 source:
   - url: https://github.com/dtcenter/METplus/archive/refs/tags/v{{ version }}.tar.gz
-    md5: a5612dfd025055707f4a45dff028e628
+    md5: fdde657734168a93f002039862b69144
     sha256: f79552f18d439e416dfa4f7cb65de9f1196864c5d3abf7443310ae4a154cc15f
 
   - url: https://github.com/dtcenter/MET/archive/refs/tags/v{{ met_version }}.tar.gz
-    md5: 4b9dba80639a74f1a3ecb15357785603
-    sha256: 613c74cbe5a0afa87422e81a4cd70984238c1a0eaf1a395503486331223ede45
+    md5: 972fdb929868e0f9d799af4ca9a4eeb2
+    sha256: c0d25ab44255f83e4dbc8f472eaa1cf44f5a05d8a6a260c5c4f1811f2da457c7
     folder: MET
 
 
@@ -86,6 +86,7 @@ test:
     - test -f $PREFIX/bin/mode
     - test -f $PREFIX/bin/mode_analysis
     - test -f $PREFIX/bin/mtd
+    - test -f $PREFIX/bin/pair_stat
     - test -f $PREFIX/bin/pb2nc
     - test -f $PREFIX/bin/pcp_combine
     - test -f $PREFIX/bin/plot_data_plane
@@ -93,6 +94,7 @@ test:
     - test -f $PREFIX/bin/point2grid
     - test -f $PREFIX/bin/point_stat
     - test -f $PREFIX/bin/regrid_data_plane
+    - test -f $PREFIX/bin/rmw_analysis
     - test -f $PREFIX/bin/series_analysis
     - test -f $PREFIX/bin/stat_analysis
     - test -f $PREFIX/bin/tc_diag
