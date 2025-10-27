@@ -18,7 +18,7 @@ source:
 
 build:
   skip: true  # [win or py!=310]
-  number: 2
+  number: 3
   entry_points:
     - run_metplus.py = metplus.scripts.run_metplus:cli_main
   ignore_run_exports:
@@ -49,7 +49,7 @@ requirements:
     - freetype
     - nceplibs-bufr
     - nceplibs-g2c
-    - metview
+    - metview ==5.25
     - hdfeos2
     - setuptools
     - setuptools-git-versioning >=2.0,<3
