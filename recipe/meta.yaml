@@ -63,7 +63,7 @@ requirements:
     - nceplibs-bufr
     - nceplibs-g2c
     - hdf4
-    - metview
+    - metview ==5.25.1
     - xarray
     - numpy >=1.24,<2
     - pandas
