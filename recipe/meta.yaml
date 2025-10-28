@@ -49,7 +49,7 @@ requirements:
     - freetype
     - nceplibs-bufr
     - nceplibs-g2c
-    - metview ==5.25.*
+    - metview ==5.25.1
     - hdfeos2
     - setuptools
     - setuptools-git-versioning >=2.0,<3
