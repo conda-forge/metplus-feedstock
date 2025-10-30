@@ -17,8 +17,8 @@ source:
 
 
 build:
-  skip: true  # [win or py!=310]
-  number: 3
+  skip: true  # [win or py<310 or py==314]
+  number: 4
   entry_points:
     - run_metplus.py = metplus.scripts.run_metplus:cli_main
   ignore_run_exports:
