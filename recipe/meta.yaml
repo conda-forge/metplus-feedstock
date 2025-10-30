@@ -65,7 +65,7 @@ requirements:
     - hdf4
     - metview ==5.25.1
     - xarray
-    - numpy >=1.24,<2
+    - numpy
     - pandas
     - pyyaml
     - netcdf4
