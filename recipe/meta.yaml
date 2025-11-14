@@ -1,4 +1,4 @@
-{% set version = "6.1.0" %}
+{% set version = "6.2.0" %}
 {% set met_version = "12.1.1" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 source:
   - url: https://github.com/dtcenter/METplus/archive/refs/tags/v{{ version }}.tar.gz
     md5: fdde657734168a93f002039862b69144
-    sha256: f79552f18d439e416dfa4f7cb65de9f1196864c5d3abf7443310ae4a154cc15f
+    sha256: 2356e6639616484ddc5a23d4948e953e4d637fa4cc59763c239f116105e7e82e
 
   - url: https://github.com/dtcenter/MET/archive/refs/tags/v{{ met_version }}.tar.gz
     md5: 7118bcd1ed9762304f0b0335a1ab7d11
@@ -18,7 +18,7 @@ source:
 
 build:
   skip: true  # [win or py<310 or py==314]
-  number: 4
+  number: 0
   entry_points:
     - run_metplus.py = metplus.scripts.run_metplus:cli_main
   ignore_run_exports:
