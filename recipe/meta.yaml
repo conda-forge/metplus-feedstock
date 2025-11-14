@@ -1,5 +1,5 @@
 {% set version = "6.2.0" %}
-{% set met_version = "12.1.1" %}
+{% set met_version = "12.2.0" %}
 
 package:
   name: metplus
@@ -7,12 +7,12 @@ package:
 
 source:
   - url: https://github.com/dtcenter/METplus/archive/refs/tags/v{{ version }}.tar.gz
-    md5: fdde657734168a93f002039862b69144
+    md5: fc5e36592e163f1c88b2d33f38a7ab10
     sha256: 2356e6639616484ddc5a23d4948e953e4d637fa4cc59763c239f116105e7e82e
 
   - url: https://github.com/dtcenter/MET/archive/refs/tags/v{{ met_version }}.tar.gz
-    md5: 7118bcd1ed9762304f0b0335a1ab7d11
-    sha256: da242378932f3057a06cf96e53dcdf74612197f70753e4be32c6390c63056031
+    md5: 2ad2b1df79576c23e4bd2a7e0a7c62bb
+    sha256: 915ae77f06e83210158de703c11daf0f0d8e7a9223433487e37cac6284b417dd
     folder: MET
 
 
