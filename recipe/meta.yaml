@@ -14,6 +14,8 @@ source:
     md5: 2ad2b1df79576c23e4bd2a7e0a7c62bb
     sha256: 915ae77f06e83210158de703c11daf0f0d8e7a9223433487e37cac6284b417dd
     folder: MET
+    patches:
+      - met_regex.patch
 
 
 build:
