@@ -74,35 +74,35 @@ requirements:
 
 test:
   commands:
-    - $PREFIX/bin/ascii2nc -h
-    - $PREFIX/bin/ensemble_stat -h
-    - $PREFIX/bin/gen_ens_prod -h
-    - $PREFIX/bin/gen_vx_mask -h
-    - $PREFIX/bin/grid_diag -h
-    - $PREFIX/bin/grid_stat -h
-    - $PREFIX/bin/ioda2nc -h
-    - $PREFIX/bin/lidar2nc -h
-    - $PREFIX/bin/madis2nc -h
-    - $PREFIX/bin/mode -h
-    - $PREFIX/bin/mode_analysis -h
-    - $PREFIX/bin/mtd -h
-    - $PREFIX/bin/pair_stat -h
-    - $PREFIX/bin/pb2nc -h
-    - $PREFIX/bin/pcp_combine -h
-    - $PREFIX/bin/plot_data_plane -h
-    - $PREFIX/bin/plot_point_obs -h
-    - $PREFIX/bin/point2grid -h
-    - $PREFIX/bin/point_stat -h
-    - $PREFIX/bin/regrid_data_plane -h
-    - $PREFIX/bin/rmw_analysis -h
-    - $PREFIX/bin/series_analysis -h
-    - $PREFIX/bin/stat_analysis -h
-    - $PREFIX/bin/tc_diag -h
-    - $PREFIX/bin/tc_gen -h
-    - $PREFIX/bin/tc_pairs -h
-    - $PREFIX/bin/tc_rmw -h
-    - $PREFIX/bin/tc_stat -h
-    - $PREFIX/bin/wavelet_stat -h
+    - $PREFIX/bin/ascii2nc --help
+    - $PREFIX/bin/ensemble_stat --help
+    - $PREFIX/bin/gen_ens_prod --help
+    - $PREFIX/bin/gen_vx_mask --help
+    - $PREFIX/bin/grid_diag --help
+    - $PREFIX/bin/grid_stat --help
+    - $PREFIX/bin/ioda2nc --help
+    - $PREFIX/bin/lidar2nc --help
+    - $PREFIX/bin/madis2nc --help
+    - $PREFIX/bin/mode --help
+    - $PREFIX/bin/mode_analysis --help
+    - $PREFIX/bin/mtd --help
+    - $PREFIX/bin/pair_stat --help
+    - $PREFIX/bin/pb2nc --help
+    - $PREFIX/bin/pcp_combine --help
+    - $PREFIX/bin/plot_data_plane --help
+    - $PREFIX/bin/plot_point_obs --help
+    - $PREFIX/bin/point2grid --help
+    - $PREFIX/bin/point_stat --help
+    - $PREFIX/bin/regrid_data_plane --help
+    - $PREFIX/bin/rmw_analysis --help
+    - $PREFIX/bin/series_analysis --help
+    - $PREFIX/bin/stat_analysis --help
+    - $PREFIX/bin/tc_diag --help
+    - $PREFIX/bin/tc_gen --help
+    - $PREFIX/bin/tc_pairs --help
+    - $PREFIX/bin/tc_rmw --help
+    - $PREFIX/bin/tc_stat --help
+    - $PREFIX/bin/wavelet_stat --help
   imports:
     - metplus
 
