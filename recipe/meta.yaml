@@ -20,7 +20,7 @@ source:
 
 build:
   skip: true  # [win or py<310]
-  number: 0
+  number: 1
   entry_points:
     - run_metplus.py = metplus.scripts.run_metplus:cli_main
   ignore_run_exports:
