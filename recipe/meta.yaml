@@ -43,6 +43,7 @@ requirements:
 
   host:
     - python
+    - libpython
     - pip
     - gsl
     - netcdf-cxx4
@@ -62,6 +63,7 @@ requirements:
     - gsl
     - netcdf-cxx4
     - python
+    - libpython
     - nceplibs-bufr
     - nceplibs-g2c
     - hdf4
