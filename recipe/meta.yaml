@@ -1,5 +1,5 @@
 {% set version = "6.2.1" %}
-{% set met_version = "12.2.1" %}
+{% set met_version = "12.2.2" %}
 
 package:
   name: metplus
@@ -11,8 +11,8 @@ source:
     sha256: bdc8e1a1de2da8238ff54a22fdf707786cb0d9ebe365cfac49a8169435aab13d
 
   - url: https://github.com/dtcenter/MET/archive/refs/tags/v{{ met_version }}.tar.gz
-    md5: 97535d38cf903635d7c011116f72611d
-    sha256: 8c3d426df4c9b932c1853518085f9f0d5fda0df076bb5adebc88901a828f308f
+    md5: ceb54a05f36827e89262803f1ab82cee
+    sha256: 401fc75720d59983ec2239f182d3815ed3b643d7aa672e6501b129de90b88e76
     folder: MET
     patches:
       - met_regex.patch
@@ -20,7 +20,7 @@ source:
 
 build:
   skip: true  # [win or py<310]
-  number: 2
+  number: 3
   entry_points:
     - run_metplus.py = metplus.scripts.run_metplus:cli_main
   ignore_run_exports:
@@ -43,6 +43,7 @@ requirements:
 
   host:
     - python
+    - libpython
     - pip
     - gsl
     - netcdf-cxx4
@@ -62,6 +63,7 @@ requirements:
     - gsl
     - netcdf-cxx4
     - python
+    - libpython
     - nceplibs-bufr
     - nceplibs-g2c
     - hdf4
