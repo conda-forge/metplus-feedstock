@@ -1,0 +1,7 @@
+# netcdf-cxx4 4.3.2 changed the library soname (libnetcdf-cxx4.so.1 -> .so.3)
+# in a patch release, so the global max_pin of x.x lets the solver pair these
+# binaries with an incompatible library. Pin to the patch version used at
+# build time instead.
+pin_run_as_build:
+  netcdf-cxx4:
+    max_pin: x.x.x
