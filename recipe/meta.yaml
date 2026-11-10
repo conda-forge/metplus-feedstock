@@ -16,6 +16,8 @@ source:
     folder: MET
     patches:
       - met_regex.patch
+      # netcdf-cxx4 4.3.2 removed the unused static file_id from ncGroup.h
+      - met_ncgroup_file_id.patch
 
 
 build:
