@@ -1,3 +1,5 @@
+DOCKER_PLATFORM:
+- linux/aarch64
 c_compiler:
 - gcc
 c_compiler_version:
@@ -30,7 +32,7 @@ netcdf_cxx4:
 - '4.3'
 pin_run_as_build:
   netcdf-cxx4:
-    max_pin: x.x
+    max_pin: x.x.x
   python:
     min_pin: x.x
     max_pin: x.x

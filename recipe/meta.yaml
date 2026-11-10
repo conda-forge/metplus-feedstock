@@ -16,11 +16,13 @@ source:
     folder: MET
     patches:
       - met_regex.patch
+      # netcdf-cxx4 4.3.2 removed the unused static file_id from ncGroup.h
+      - met_ncgroup_file_id.patch
 
 
 build:
   skip: true  # [win or py<310]
-  number: 3
+  number: 4
   entry_points:
     - run_metplus.py = metplus.scripts.run_metplus:cli_main
   ignore_run_exports:
